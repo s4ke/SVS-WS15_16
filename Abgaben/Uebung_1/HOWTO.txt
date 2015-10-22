@@ -1,0 +1,7 @@
+Requires Java 8
+
+Compile with:
+javac CaesarCracker.java
+
+run with:
+java CaesarCracker

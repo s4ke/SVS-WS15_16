@@ -1,4 +1,6 @@
-package de.ubt.svs.braun.neuberger.CasesarCracker;
+/**
+ * Martin Braun (1249080), Julian Neuberger
+ */
 
 import java.util.ArrayList;
 import java.util.Arrays;
