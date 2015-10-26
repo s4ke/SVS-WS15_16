@@ -26,3 +26,5 @@ hs_err_pid*
 
 createDDL.jdbc
 dropDDL.jdbc
+
+Debug/
