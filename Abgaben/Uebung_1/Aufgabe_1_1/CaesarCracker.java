@@ -62,7 +62,7 @@ public class CaesarCracker {
 			char[] stringAsArray = string.toCharArray();
 			for ( int i = 0; i < stringAsArray.length; ++i ) {
 				int originalBasedToA = stringAsArray[i] - 'A';
-				int newIndex = Math.floorMod( originalBasedToA - key, 26 );
+				int newIndex = mod( originalBasedToA - key, 26 );
 				stringAsArray[i] = chars[newIndex];
 			}
 			System.out.println(
@@ -72,6 +72,10 @@ public class CaesarCracker {
 							)
 			);
 		}
+	}
+
+	private static int mod(int a, int b) {
+		return (a % b + b) % b;
 	}
 
 	private static class Wrapper implements Comparable<Wrapper> {

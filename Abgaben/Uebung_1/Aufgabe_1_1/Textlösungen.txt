@@ -1,0 +1,19 @@
+a)
+Wort 1 hat den Key K. Auf den ersten Versuch getroffen.
+Wort 2 hat den Key H. Auf den fünften Versuch getroffen.
+b)
+Mit diesem Programm kann nicht automatisch entschlüsselt werden,
+da wie beim Wort 2 nich unbedingt immer der erste Versuch der richtige
+ist. Eventuell liese sich das Verfahren aber verbessern, wenn richtige
+Wörter verschickt werden, indem man z.B. ein Wörterbuch benutzt um Key
+Kandidaten zu bewerten.
+
+Wenn kein E im Zielwort ist, hat man mit dem Verfahren aus der Abgabe
+ein Problem da in diesem Programm nicht weitergesucht wird. Abhilfe:
+erweitern auf Suche in allen möglichen Keys.
+
+Per Zufall kann auch eine kohärente Lösung gefunden werden, die aber
+nicht das eigentlich gesuchte sein kann (Pseudolösung). Das kann man
+nur sehr schwer verhindern. Evtl. bietet hier eine Kombination mit 
+einem Wörterbuch etwas Abhilfe.
+
