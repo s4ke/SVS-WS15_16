@@ -28,3 +28,4 @@ createDDL.jdbc
 dropDDL.jdbc
 
 Debug/
+src/main/c++/VigenereEncrypter/VignereEncrypter.h.gch
