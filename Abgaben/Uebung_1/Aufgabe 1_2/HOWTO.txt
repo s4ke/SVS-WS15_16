@@ -1,0 +1,7 @@
+Compilen mit "g++ Main.cpp VigenereEncrypter.cpp VignereEncrypter.h –o VigenereEncrypter.exe"
+
+Erst Nachricht eingeben -> Enter 
+-> Schlüssel eingeben -> Enter, 
+	dann d oder e für entschlüsseln bzw verschlüsseln 
+-> Enter.
+
