@@ -1,0 +1,180 @@
+2.2)
+
+a) 
+
+IC: 0,047521990989
+
+b)
+Berechnung der Sequenzen und der Faktoren
+repetitions, sorted by delta
+sequence: OXYYAYGG, delta: 160, start: 63, end: 231, factors: [2, 5]
+sequence: RTH, delta: 158, start: 49, end: 210, factors: [2, 79]
+sequence: HNMK, delta: 150, start: 45, end: 199, factors: [2, 3, 5]
+sequence: IZOS, delta: 140, start: 19, end: 163, factors: [2, 5, 7]
+sequence: LM, delta: 136, start: 29, end: 167, factors: [17, 2]
+sequence: MPNRHNMYM, delta: 135, start: 31, end: 175, factors: [3, 5]
+sequence: PNRHNMYMS, delta: 135, start: 32, end: 176, factors: [3, 5]
+sequence: NRHNMYMST, delta: 135, start: 33, end: 177, factors: [3, 5]
+sequence: RHDDBAYGG, delta: 130, start: 2, end: 141, factors: [2, 5, 13]
+sequence: CRHDDBAYG, delta: 130, start: 1, end: 140, factors: [2, 5, 13]
+sequence: RCRHDDBAY, delta: 130, start: 0, end: 139, factors: [2, 5, 13]
+sequence: GF, delta: 108, start: 122, end: 232, factors: [2, 3]
+sequence: HQ, delta: 95, start: 51, end: 148, factors: [19, 5]
+sequence: WH, delta: 70, start: 44, end: 116, factors: [2, 5, 7]
+sequence: IMM, delta: 65, start: 59, end: 127, factors: [5, 13]
+sequence: YGGHVZDDL, delta: 60, start: 8, end: 77, factors: [2, 3, 5]
+sequence: AYGGHVZDD, delta: 60, start: 7, end: 76, factors: [2, 3, 5]
+sequence: WBBAOXY, delta: 60, start: 89, end: 156, factors: [2, 3, 5]
+sequence: IL, delta: 46, start: 118, end: 166, factors: [2, 23]
+sequence: CUX, delta: 30, start: 56, end: 89, factors: [2, 3, 5]
+sequence: OXYYAJI, delta: 25, start: 153, end: 185, factors: [5]
+sequence: MSTRT, delta: 25, start: 79, end: 109, factors: [5]
+sequence: MMC, delta: 24, start: 60, end: 87, factors: [2, 3]
+sequence: DMPNRHNM, delta: 20, start: 190, end: 218, factors: [2, 5]
+sequence: FI, delta: 6, start: 117, end: 125, factors: [2, 3]
+
+Ergebnis: wahrscheinlich Key der Länge 5.
+
+c)
+
+using actual key length: 5
+split into strings of length 5:
+RCRHD
+DBAYG
+GHVZD
+DLQOI
+ZOSYM
+DVMKL
+MMPNR
+HNMYM
+STRTW
+HNMKR
+THQSM
+SCUXI
+MMCOX
+YYAYG
+GHVZD
+DLAXM
+STRTM
+MCUXW
+BBAOX
+YBBRD
+RWURM
+STRTA
+NVROW
+HYFIL
+VCGFI
+MMVTH
+RCRHD
+DBAYG
+GQVZD
+DHQKW
+BBAOX
+YYAJI
+ZOSJI
+LMPNR
+HNMYM
+STFOX
+YYAJI
+RJVZD
+DMPNR
+HNMKV
+AYAAI
+STRTH
+DMPNR
+HNMNS
+KTEOX
+YYAYG
+GFVZD
+DL
+
+Berechnung der Spalten-ICs:
+
+Column 0, RDGDZDMHSHTSMYGDSMBYRSNHVMRDGDBYZLHSYRDHASDHKYGD, :0.0851063829787234
+Column 1, CBHLOVMNTNHCMYHLTCBBWTVYCMCBQHBYOMNTYJMNYTMNTYFL, :0.07624113475177305
+Column 2, RAVQSMPMRMQUCAVARUABURRFGVRAVQAASPMFAVPMARPMEAV, :0.1017576318223867
+Column 3, HYZOYKNYTKSXOYZXTXORRTOIFTHYZKOJJNYOJZNKATNNOYZ, :0.07955596669750231
+Column 4, DGDIMLRMWRMIXGDMMWXDMAWLIHDGDWXIIRMXIDRVIHRSXGD, :0.09620721554116558
+
+=> Definitiv ein Key der Länge 5.
+
+d)
+
+Auflistung der jeweiligen Spalten (#-Zeile) und der Shifts mit den Werten unserer Bewertungsfunktion. Diese addiert in der geshifteten
+Darstellung alle Stellen die einem H entsprechen.
+
+Unser Programm gibt die 4 Buchstaben mit den meisten Vorkommnissen aus (hard-coded).
+Über den Key wird mit der Heuristik entschieden.
+
+occurences in the columns:
+| col|   A|   B|   C|   D|   E|   F|   G|   H|   I|   J|   K|   L|   M|   N|   O|   P|   Q|   R|   S|   T|   U|   V|   W|   X|   Y|   Z
+|#  0|   1|   2|   0|   9|   0|   0|   4|   6|   0|   0|   1|   1|   4|   1|   0|   0|   0|   4|   6|   1|   0|   1|   0|   0|   5|   2| max occurences: [D, H, S, Y] | key candidates: Z or Q D or U O or F U or L
+|k: Z|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H| heuristic: 36 (was to E) 
+|k: Q|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M| heuristic: 20 (was to N) 
+|k: D|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L| heuristic: 22 (was to E) 
+|k: U|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M| heuristic: 19 (was to N) 
+|k: O|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M| heuristic: 19 (was to E) 
+|k: F|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M| heuristic: 17 (was to N) 
+|k: U|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M| heuristic: 19 (was to E) 
+|k: L|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H| heuristic: 24 (was to N) 
+
+Schlüssel ist hier Z. => Z****
+
+|#  1|   0|   5|   5|   0|   0|   1|   0|   4|   0|   1|   0|   3|   6|   5|   2|   0|   1|   0|   0|   6|   0|   2|   1|   0|   6|   0| max occurences: [M, T, Y, B] | key candidates: I or Z P or G U or L X or O
+|k: I|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H| heuristic: 15 (was to E) 
+|k: Z|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H| heuristic: 16 (was to N) 
+|k: P|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M| heuristic: 16 (was to E) 
+|k: G|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H| heuristic: 19 (was to N) 
+|k: U|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M| heuristic: 34 (was to E) 
+|k: L|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H| heuristic: 20 (was to N) 
+|k: X|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M| heuristic: 12 (was to E) 
+|k: O|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M| heuristic: 20 (was to N) 
+
+Schlüssel ist hier U. => ZU***
+
+|#  2|  10|   1|   1|   0|   1|   2|   1|   0|   0|   0|   0|   0|   6|   0|   0|   4|   3|   7|   2|   0|   3|   6|   0|   0|   0|   0| max occurences: [A, R, M, V] | key candidates: W or N N or E I or Z R or I
+|k: W|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M| heuristic: 15 (was to E) 
+|k: N|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M| heuristic: 31 (was to N) 
+|k: N|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M| heuristic: 31 (was to E) 
+|k: E|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L| heuristic: 22 (was to N) 
+|k: I|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H| heuristic: 30 (was to E) 
+|k: Z|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H| heuristic: 19 (was to N) 
+|k: R|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H| heuristic: 16 (was to E) 
+|k: I|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H| heuristic: 30 (was to N) 
+
+Schlüssel ist hier N. => ZUN**
+
+|#  3|   1|   0|   0|   0|   0|   1|   0|   2|   1|   3|   4|   0|   0|   5|   7|   0|   0|   2|   1|   5|   0|   0|   0|   3|   7|   5| max occurences: [O, Y, N, T] | key candidates: K or B U or L J or A P or G
+|k: K|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M| heuristic: 24 (was to E) 
+|k: B|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L| heuristic: 18 (was to N) 
+|k: U|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M| heuristic: 15 (was to E) 
+|k: L|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H| heuristic: 18 (was to N) 
+|k: J|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L| heuristic: 14 (was to E) 
+|k: A|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L| heuristic: 24 (was to N) 
+|k: P|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M| heuristic: 11 (was to E) 
+|k: G|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H| heuristic: 36 (was to N) 
+
+Schlüssel ist hier K. => ZUNG*
+
+|#  4|   1|   0|   0|   8|   0|   0|   4|   2|   7|   0|   0|   2|   7|   0|   0|   0|   0|   5|   1|   0|   0|   1|   4|   5|   0|   0| max occurences: [D, I, M, R] | key candidates: Z or Q E or V I or Z N or E
+|k: Z|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H| heuristic: 27 (was to E) 
+|k: Q|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M| heuristic: 22 (was to N) 
+|k: E|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L| heuristic: 32 (was to E) 
+|k: V|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H| heuristic: 23 (was to N) 
+|k: I|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H| heuristic: 20 (was to E) 
+|k: Z|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H| heuristic: 27 (was to N) 
+|k: N|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M| heuristic: 11 (was to E) 
+|k: E|   L|   L|   L|   L|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L| heuristic: 32 (was to N) 
+
+Häufigster Buchstabe is hier D. Schlüssel ist hier D. => ZUNGE
+
+|orig|   H|   M|   M|   M|   H|   M|   M|   H|   H|   M|   M|   M|   M|   H|   H|   M|   L|   H|   H|   H|   M|   L|   L|   L|   L|   L|
+
+Key sieht doch schon gut aus. Die Entschlüsslung ergibt hier:
+
+SIEBZEHNSCHNITZERDIEAUFSIEBZEHNSCHNITZSITZENSITZENUNDMITIHRENSPITZENS
+CHNITZERNRITZENINIHRSCHNITZHOLZSCHLITZENWOBEISIESCHWITZENSINDSIEBZEHN
+SCHWITZENDESCHNITZENDEAUFDEMSCHNITZSITZSITZENDESPITZESCHNITZERBENUE
+TZENDESCHNITZHOLZRITZENSCHLITZER
+
+Key ist tatsächlich ZUNGE.

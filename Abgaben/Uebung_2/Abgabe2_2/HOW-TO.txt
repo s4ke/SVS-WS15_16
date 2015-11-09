@@ -1,0 +1,16 @@
+mit Java 8:
+
+compile with
+
+javac VigenereCracker.java
+
+run with:
+
+java VigenereCracker <string> <max_key_length> <actual_key_length>
+
+Der letzte Parameter kann benutzt werden nachdem man mithilfe eines Aufrufes
+ohne den Parameter die Key Länge bestimmt hat.
+
+Bsp:
+
+java VigenereCracker RCRHDDBAYGGHVZDDLQOIZOSYMDVMKLMMPNRHNMYMSTRTWHNMKRTHQSMSCUXIMMCOXYYAYGGHVZDDLAXMSTRTMMCUXWBBAOXYBBRDRWURMSTRTANVROWHYFILVCGFIMMVTHRCRHDDBAYGGQVZDDHQKWBBAOXYYAJIZOSJILMPNRHNMYMSTFOXYYAJIRJVZDDMPNRHNMKVAYAAISTRTHDMPNRHNMNSKTEOXYYAYGGFVZDDL 9 5
