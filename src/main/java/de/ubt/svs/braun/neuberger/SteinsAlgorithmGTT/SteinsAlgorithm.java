@@ -12,6 +12,8 @@ public class SteinsAlgorithm {
     public static int solve(int first, int second) {
         int curFirst = first, curSecond = second, randomC = 1, tmp;
         boolean curFirstEven, curSecondEven;
+        System.out.println(MessageFormat.format("Schritt 1 | A:{0}, B:{1}, C:{2}",first, second, randomC));
+        int index = 2;
         while(curFirst != curSecond) {
             curFirstEven = curFirst % 2 == 0;
             curSecondEven = curSecond % 2 == 0;
@@ -33,6 +35,8 @@ public class SteinsAlgorithm {
                 curFirst = tmp;
                 // randomC stays the same
             }
+
+            System.out.println(MessageFormat.format("Schritt {0} | A:{1}, B:{2}, C:{3}", index++, curFirst, curSecond, randomC));
         }
         return (curFirst * randomC);
     }
@@ -44,9 +48,10 @@ public class SteinsAlgorithm {
             second = Integer.parseInt(args[1]);
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Usage: SteinsAlgorithm <a> <b>");
+            System.exit(0);
         }
-        System.out.print(MessageFormat.format("Solution for {0} and {1} is ", first, second));
-        System.out.println(SteinsAlgorithm.solve(first, second));
+        int sol = SteinsAlgorithm.solve(first, second);
+        System.out.println(MessageFormat.format("Solution for {0} and {1} is {2}", first, second, sol));
     }
 
 }

@@ -1,0 +1,21 @@
+Schritt 1 | A:2.152, B:764, C:1
+Schritt 2 | A:1.076, B:382, C:2
+Schritt 3 | A:538, B:191, C:4
+Schritt 4 | A:269, B:191, C:4
+Schritt 5 | A:78, B:191, C:4
+Schritt 6 | A:39, B:191, C:4
+Schritt 7 | A:152, B:39, C:4
+Schritt 8 | A:76, B:39, C:4
+Schritt 9 | A:38, B:39, C:4
+Schritt 10 | A:19, B:39, C:4
+Schritt 11 | A:20, B:19, C:4
+Schritt 12 | A:10, B:19, C:4
+Schritt 13 | A:5, B:19, C:4
+Schritt 14 | A:14, B:5, C:4
+Schritt 15 | A:7, B:5, C:4
+Schritt 16 | A:2, B:5, C:4
+Schritt 17 | A:1, B:5, C:4
+Schritt 18 | A:4, B:1, C:4
+Schritt 19 | A:2, B:1, C:4
+Schritt 20 | A:1, B:1, C:4
+Solution for 2.152 and 764 is 4
