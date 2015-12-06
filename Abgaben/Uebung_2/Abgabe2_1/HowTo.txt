@@ -1,0 +1,8 @@
+Use javac SteinsAlgorithm.java to compile.
+Run with min. Java7
+
+Syntax:
+
+SteinsAlgorithm <A> <B>
+
+Puts out A, B, C for all steps and the result
