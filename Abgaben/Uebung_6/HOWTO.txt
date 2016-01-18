@@ -1,0 +1,5 @@
+Compile with:
+javac DiffieHellmann.java
+
+run with:
+java DiffieHellmann
